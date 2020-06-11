@@ -1,0 +1,117 @@
+$border-color: #E7DCFE;
+$field-background-color: #FFFFFF;
+
+.conversionForm-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    &--from{
+        display: flex;
+        flex-direction: column;
+        // flex: 0 0 40%;
+        max-width: 47.5%;
+        margin-right: 2.5%;
+
+        & label{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0 0 2% 2%;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: uppercase;
+            opacity: 0.62;
+        }
+
+        & input{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 31px;
+            line-height: 40px;
+            background-color: $field-background-color;
+            padding: 10px 27px;
+            border: 1px solid $border-color;
+            border-radius: 3px;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: capitalize;
+            opacity: 1;
+        }
+
+        & select{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 15px;
+            background-color: $field-background-color;
+            padding: 15px 27px;
+            border: 1px solid $border-color;
+            border-radius: 3px;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: capitalize;
+            opacity: 1;
+            
+           
+        }
+
+    }
+
+    &--to{
+        display: flex;
+        flex-direction: column;
+        // flex: 0 0 4%;
+        margin-left: 2.5%;
+        text-align: left;
+        max-width: 47.5%;
+
+        
+        & label{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 0 0 2% 2%;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: uppercase;
+            opacity: 0.62;
+        }
+
+        & input{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 25px;
+            background-color: $field-background-color;
+            padding: 10px 27px;
+            border: 1px solid $border-color;
+            border-radius: 3px;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: capitalize;
+            opacity: 1;
+        }
+
+        & select{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 15px;
+            background-color: $field-background-color;
+            padding: 15px 27px;
+            border: 1px solid $border-color;
+            border-radius: 3px;
+            letter-spacing: 0px;
+            color: #000000;
+            text-transform: capitalize;
+            opacity: 1;
+            
+        }
+    }
+}

@@ -1,4 +1,40 @@
 .conversion-box{
-    width: 173px;
-    height: 137px;
+    min-width: 173px;
+    min-height: 137px;
+    //background-color: #FFFFFF;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6% 0 6%;
+
+    @media only screen and (max-width: 1024px) {
+        width: 30%;
+        min-height: 117px;
+        margin: 0 3.3% 0 3.33%;
+    }
+    //border-color: transparent;
+
+    & img{
+        margin: 0 auto 20px auto;
+        @media only screen and (max-width: 600px) {
+        margin: 0 auto 10px auto;
+    }
+    }
+
+    & span {
+        font-family: 'Montserrat', sans-serif;
+        //font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+       // opacity: 0.21;
+    }
+
+   
+}
+
+.select{
+    line-height: 20px;
+
 }
