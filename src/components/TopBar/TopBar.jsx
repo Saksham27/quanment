@@ -4,10 +4,10 @@ import history from './../../services/history'
 
 function TopBar(props) {
     return (
-        <div class='container'>
-            <div class='quantment' onClick={() => history.push('./')}>Quantment</div>
-            <div/>
-            <div class="history" onClick={() => history.push('./History')}>History</div>
+        <div className='container'>
+            <div className='quantment' onClick={() => history.push('./')}>Quantment</div>
+            <div />
+            <div className="history" onClick={() => history.push('./History')}>History</div>
         </div>
     )
 }

@@ -6,7 +6,8 @@ $background-color: #FFFFFF;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex: 0 1 75px;
+    // flex: 0 1 75px;
+    min-height: 75px;
    
 
     .quantment {
@@ -24,7 +25,7 @@ $background-color: #FFFFFF;
     .history{
         text-align: left;
         font-family: 'Poppins', sans-serif;
-        font-size: 12px;
+        font-size: 15px;
         line-height: 18px;
         letter-spacing: 0px;
         color: $font-color;
@@ -32,13 +33,15 @@ $background-color: #FFFFFF;
     }
 
     @media only screen and (max-width: 1024px) {
+        min-height: 60px;
+
         .quantment {
             font-size: 20px;
             line-height: 30px;
         }
 
         .history{
-            font-size: 11px;
+            font-size: 14px;
         line-height: 17px;
         }
     }
