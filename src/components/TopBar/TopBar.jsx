@@ -1,6 +1,8 @@
 import React from 'react'
-import './TopBar.scss'
 import history from './../../services/history'
+
+// css import
+import './TopBar.scss'
 
 function TopBar(props) {
     return (
@@ -11,7 +13,6 @@ function TopBar(props) {
         </div>
     )
 }
-
 
 export default TopBar
 

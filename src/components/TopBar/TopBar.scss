@@ -1,3 +1,4 @@
+// variables
 $font-color: #000000;
 $background-color: #FFFFFF;
 
@@ -19,6 +20,7 @@ $background-color: #FFFFFF;
         letter-spacing: 0px;
         color: $font-color;
         opacity: 1;
+        cursor: pointer;
      
     }
 
@@ -30,6 +32,7 @@ $background-color: #FFFFFF;
         letter-spacing: 0px;
         color: $font-color;
         opacity: 1;
+        cursor: pointer;
     }
 
     @media only screen and (max-width: 1024px) {
