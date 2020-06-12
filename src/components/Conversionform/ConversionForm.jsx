@@ -102,7 +102,7 @@ export class ConversionForm extends Component {
                     </div>
                     <div className='conversionForm-container--to'>
                         <label htmlFor="to">To</label>
-                        <input type="number" id="from_input" name="form_input" value={this.state.resultValue} readOnly></input>
+                        <input type="number" id="from_input" name="form_input" value={this.state.resultValue} readOnly className={this.props.style}></input>
                         <select id="to" name="to" onChange={this.onChangeSecond} className={this.props.style} value={this.state.secondSelectValue}>
                             {
                                 value.map((option, index) => {
