@@ -36,7 +36,8 @@ $main-background-color: #F5F6FA;
         flex: 1 0 auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: start;
+        
 
         .table{
             background-color: $main-background-color;
@@ -44,7 +45,7 @@ $main-background-color: #F5F6FA;
             border-collapse: separate;
 
             &-header{
-            
+                
                 background-color: #12309e;
 
                 th{                    
