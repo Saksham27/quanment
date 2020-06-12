@@ -114,4 +114,32 @@ $field-background-color: #FFFFFF;
             
         }
     }
+
+    @media only screen and (max-width: 360px) {
+        &--from{
+            & label{
+                
+            }
+            & input{
+                font-size: 21px;
+            line-height: 30px;
+            }
+            & select{
+
+            }
+        }
+
+        &--to{
+            & label{
+
+            }
+            & input{
+                 font-size: 21px;
+            line-height: 30px;
+            }
+            & select{
+                
+            }
+        }
+    }
 }
