@@ -41,7 +41,7 @@ $main-background-color: #F5F6FA;
         .table{
             background-color: $main-background-color;
             margin-top: 0.5px;
-            border-collapse: collapse;
+            border-collapse: separate;
 
             &-header{
             
@@ -94,9 +94,14 @@ $main-background-color: #F5F6FA;
 }
 
 .deleteButton{
-    background-color: red;
-   
-   
+    background-color: rgb(247, 44, 44);
+    cursor: pointer;
+    box-shadow: inset 0px -3px 10px rgba(0,0,0,0.6);
+    transform: translate3d(0px, -1px, 0px);
 
-    
+    &:hover,&:focus,&:active{
+        background-color: rgb(241, 6, 6);
+        box-shadow: inset 0px -1px 10px rgba(0,0,0,0.6);
+        transform: translate3d(0px, 0px, 0px);
+    }
 }

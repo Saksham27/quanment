@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import TopBar from '../TopBar/TopBar'
-import './History.scss'
 import AxiosService from './../../services/axios_service'
 import config from './../../config/config'
+
+import './History.scss'
 
 const axios = new AxiosService();
 
