@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/quanment/precache-manifest.50f06aafb8e98a0be3fb81c77a689aa9.js"
+  "/quanment/precache-manifest.87d72996faf30575186eb0cb522fab6d.js"
 );
 
 self.addEventListener('message', (event) => {

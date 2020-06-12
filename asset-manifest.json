@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/quanment/static/css/main.3fbbaecd.chunk.css",
+    "main.css": "/quanment/static/css/main.881ab9e2.chunk.css",
     "main.js": "/quanment/static/js/main.9cdab46f.chunk.js",
     "main.js.map": "/quanment/static/js/main.9cdab46f.chunk.js.map",
     "runtime-main.js": "/quanment/static/js/runtime-main.5f36e0d9.js",
@@ -8,9 +8,9 @@
     "static/js/2.ab1d4d3c.chunk.js": "/quanment/static/js/2.ab1d4d3c.chunk.js",
     "static/js/2.ab1d4d3c.chunk.js.map": "/quanment/static/js/2.ab1d4d3c.chunk.js.map",
     "index.html": "/quanment/index.html",
-    "precache-manifest.50f06aafb8e98a0be3fb81c77a689aa9.js": "/quanment/precache-manifest.50f06aafb8e98a0be3fb81c77a689aa9.js",
+    "precache-manifest.87d72996faf30575186eb0cb522fab6d.js": "/quanment/precache-manifest.87d72996faf30575186eb0cb522fab6d.js",
     "service-worker.js": "/quanment/service-worker.js",
-    "static/css/main.3fbbaecd.chunk.css.map": "/quanment/static/css/main.3fbbaecd.chunk.css.map",
+    "static/css/main.881ab9e2.chunk.css.map": "/quanment/static/css/main.881ab9e2.chunk.css.map",
     "static/js/2.ab1d4d3c.chunk.js.LICENSE.txt": "/quanment/static/js/2.ab1d4d3c.chunk.js.LICENSE.txt",
     "static/media/beaker.svg": "/quanment/static/media/beaker.c824fced.svg",
     "static/media/beaker_inactive.svg": "/quanment/static/media/beaker_inactive.741ab4aa.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.5f36e0d9.js",
     "static/js/2.ab1d4d3c.chunk.js",
-    "static/css/main.3fbbaecd.chunk.css",
+    "static/css/main.881ab9e2.chunk.css",
     "static/js/main.9cdab46f.chunk.js"
   ]
 }
