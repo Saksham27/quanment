@@ -10,9 +10,23 @@
     margin: 0 6% 0 6%;
 
     @media only screen and (max-width: 1024px) {
-        width: 30%;
+        //width: 30%;
         min-height: 117px;
         margin: 0 3.3% 0 3.33%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        min-width: 100px;
+        width: 120px;
+        min-height: 107px;
+        margin: 0 5px 0 5px;
+    }
+
+    @media only screen and (max-width: 360px) {
+        min-width: 100px;
+        min-height: 100px;
+        margin: 0 2px 0 2px;
+
     }
     //border-color: transparent;
 
@@ -20,7 +34,11 @@
         margin: 0 auto 20px auto;
         @media only screen and (max-width: 600px) {
         margin: 0 auto 10px auto;
-    }
+        }
+        @media only screen and (max-width: 360px) {
+        margin: 0 auto 5px auto;
+
+        }
     }
 
     & span {
@@ -29,6 +47,16 @@
         font-size: 15px;
         line-height: 19px;
        // opacity: 0.21;
+
+        @media only screen and (max-width: 600px) {
+         font-size: 14px;
+        line-height: 18px;
+        }
+        @media only screen and (max-width: 360px) {
+         font-size: 12px;
+        line-height: 16px;
+
+        }
     }
 
    
