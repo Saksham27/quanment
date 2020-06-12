@@ -1,6 +1,4 @@
-@media only screen and (max-width: 600px) {
- 
-}
+
 
 $background-color: #446DFF;
 $font-color: #FFFFFF;
@@ -28,7 +26,6 @@ $main-background-color: #F5F6FA;
         color: $font-color;
         text-transform: capitalize;
         opacity: 1;
-        
         }
 
 
@@ -109,9 +106,9 @@ $main-background-color: #F5F6FA;
                  width: 65%;
                  margin: auto;
                  justify-content: center;
-                 flex: 0 0 20%;
+                 flex: 0 0 30%;
             
-            width: 50%;
+            
              }
 
               &--conversion{
@@ -121,11 +118,51 @@ $main-background-color: #F5F6FA;
         }
 
     }
+
+    @media only screen and (max-width: 600px) {
+        &-header{
+             padding: 10px;
+        
+        
+             &-text{
+                font-size: 1vh;
+                line-height: 25px;
+        
+            }
+         }
+          &-main{
+
+             &--chooseType{
+                max-width: 90%;
+                width: 90%;
+                font-size: 14px;
+                line-height: 18px;
+             }
+
+             &--conversionType{
+                 max-width: 90%;
+                 width: 90%;
+                 margin: auto;
+                 justify-content: center;
+                 flex: 0 0 30%;
+            
+               
+             }
+
+              &--conversion{
+                max-width: 90%;
+                width: 90%;
+            }
+        }
+    }
 }
 
 .length{
     background-color: #FFFFFF;
-     border-color: transparent;
+
+     border: 2px solid #eee;  /* JUST TO LOOK COOL */
+     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+     transition: linear 0.2s all;
 
     &:hover{
         background-color: #EDFDF9;
@@ -133,6 +170,8 @@ $main-background-color: #F5F6FA;
         border-style: solid;
         border-width: 2px;
         outline: none;
+        box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
+        transform: translate3d(0px, -1px, 0px);
         transition: linear 0.2s all;
 
         & span{
@@ -149,9 +188,9 @@ $main-background-color: #F5F6FA;
         border-style: solid;
         border-width: 2px;
         outline: none;
-        transition: linear 0.2s all;
-        outline: none;
 
+        box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
+        transform: translate3d(0px, -1px, 0px);
         & span{
             color: #0EC098;
             font-weight: 700;
@@ -161,15 +200,19 @@ $main-background-color: #F5F6FA;
 
 .temp{
      background-color: #FFFFFF;
-      border-color: transparent;
+     border: 2px solid #eee;  /* JUST TO LOOK COOL */
+     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+     transition: linear 0.2s all;
 
       &:hover{
         background-color: #FFEEF0;
         border-color: #FD5160;
         border-style: solid;
         border-width: 2px;
-        transition: linear 0.2s all;
         outline: none;
+        transition: linear 0.2s all;
+        box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
+        transform: translate3d(0px, -1px, 0px);
 
         & span{
             color: #FD5160;
@@ -185,8 +228,9 @@ $main-background-color: #F5F6FA;
         border-style: solid;
         border-width: 2px;
         outline: none;
-        transition: linear 0.2s all;
-
+    
+        box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
+        transform: translate3d(0px, -1px, 0px);
 
         & span{
             color: #FD5160;
@@ -197,7 +241,11 @@ $main-background-color: #F5F6FA;
 
 .volume{
         background-color: #FFFFFF;
-        border-color: transparent;
+        border: 2px solid #eee;  /* JUST TO LOOK COOL */
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+        transition: linear 0.1s all;
+
+
     
     &:hover{
         background-color: #E8DDFF;
@@ -205,6 +253,8 @@ $main-background-color: #F5F6FA;
         border-style: solid;
         border-width: 2px;
         outline: none;
+      box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
+        transform: translate3d(0px, -1px, 0px);
         transition: linear 0.2s all;
 
         & span{
@@ -221,7 +271,8 @@ $main-background-color: #F5F6FA;
         border-style: solid;
         border-width: 2px;
         outline: none;
-        transition: linear 0.2s all;
+        box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
+        transform: translate3d(0px, -1px, 0px);
 
         & span{
             color: #7224FF;
@@ -231,6 +282,7 @@ $main-background-color: #F5F6FA;
 }
 
 .lengthUnits{
+    transition: linear 0.2s all;
     option{       
         &:checked{
                 color:#0EC098;
@@ -241,6 +293,7 @@ $main-background-color: #F5F6FA;
 }
 
 .tempUnits{
+    transition: linear 0.2s all;
     option{       
         &:checked{
                 color:#FD5160;
@@ -251,6 +304,7 @@ $main-background-color: #F5F6FA;
 }
 
 .volumeUnits{
+    transition: linear 0.2s all;
     option{       
         &:checked{
                 color:#7224FF;

@@ -53,11 +53,10 @@ const Home = props => {
         setTempStyle('temp');
 
         setFormStyle('lengthUnits');
-       
     };
 
-    
-    
+
+
 
     // method for temp button
 
@@ -81,9 +80,9 @@ const Home = props => {
         setLengthStyle('length');
         setTempStyle('temp-active');
         setVolumeStyle('volume');
-        
+
         setFormStyle('tempUnits');
-        
+
     }
 
     // method for volume button
@@ -108,42 +107,42 @@ const Home = props => {
         setVolumeStyle('volume-active');
         setLengthStyle('length');
         setTempStyle('temp');
-        
+
         setFormStyle('volumeUnits');
-        
+
     }
 
     let passOption = () => {
-        if (lengthClicked === true) {       
+        if (lengthClicked === true) {
             setOptions(lengthOption);
         }
-        if (tempClicked === true) {       
+        if (tempClicked === true) {
             setOptions(tempOption);
         }
-        if (volumeClicked === true) { 
+        if (volumeClicked === true) {
             setOptions(volumeOption);
         }
     }
 
-   
+
     return (
-        <div class="home">
-            <TopBar class="home-topbar" />
-            <div class="home-header">
-                <span class="home-header-text">Welcome To Quantity Measurement</span>
+        <div className="home">
+            <TopBar className="home-topbar" />
+            <div className="home-header">
+                <span className="home-header-text">Welcome To Quantity Measurement</span>
             </div>
-            <div class="home-main">
-                <div class="home-main--chooseType">
+            <div className="home-main">
+                <div className="home-main--chooseType">
                     <span>Choose Type</span>
                 </div>
-                <div class="home-main--conversionType">
+                <div className="home-main--conversionType">
                     <ConversionType
                         styleName={lengthStyle}
                         image={lengthBackground}
                         enter={hoverLengthEnter}
                         click={clickLength}
                         exit={hoverLengthExit}
-                        active={true}>
+                        >
                         Length
                     </ConversionType>
 
@@ -153,7 +152,7 @@ const Home = props => {
                         enter={hoverTempEnter}
                         click={clickTemp}
                         exit={hoverTempExit}
-                        active={false}>
+                        >
                         Temperature
                     </ConversionType>
 
@@ -163,13 +162,13 @@ const Home = props => {
                         enter={hoverVolumeEnter}
                         click={clickVolume}
                         exit={hoverVolumeExit}
-                        active={false}>
+                        >
                         Volume
                     </ConversionType>
 
                 </div>
-                <div class="home-main--conversion">
-                   {useEffect(passOption)}
+                <div className="home-main--conversion">
+                    {useEffect(passOption)}
                     <ConversionForm style={formStyle} options={optionsVal}></ConversionForm>
                 </div>
             </div>
