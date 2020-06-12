@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Quantment Homepage
-![](https://github.com/Saksham27/quanment/blob/master/src/assests/Homepage_for_readme.PNG?raw=true)
+![](https://github.com/Saksham27/quanment/blob/master/src/assests/Homepage_for_readme.PNG)
 
 ## Available Scripts
 
