@@ -1,5 +1,5 @@
 
-
+// variables 
 $background-color: #446DFF;
 $font-color: #FFFFFF;
 $main-background-color: #F5F6FA;
@@ -162,7 +162,8 @@ $main-background-color: #F5F6FA;
 
      border: 2px solid #eee;  /* JUST TO LOOK COOL */
      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
-     transition: linear 0.2s all;
+      transition: linear 0.2s all;
+     transform: translate3d(0px, 0px, 0px);
 
     &:hover{
         background-color: #EDFDF9;
@@ -180,6 +181,11 @@ $main-background-color: #F5F6FA;
             opacity: 1;
         }              
     }
+
+     &:active{
+            transform: translate3d(0px, 0px, 0px);
+            box-shadow: rgba(0,0,0,0) 0px 0px 0px;
+        }
 }
 
 .length-active{
@@ -188,9 +194,15 @@ $main-background-color: #F5F6FA;
         border-style: solid;
         border-width: 2px;
         outline: none;
-
         box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
         transform: translate3d(0px, -1px, 0px);
+         transition: linear 0.2s all;
+
+         &:active{
+            transform: translate3d(0px, 0px, 0px);
+            box-shadow: rgba(0,0,0,0) 0px 0px 0px;
+        }
+
         & span{
             color: #0EC098;
             font-weight: 700;
@@ -203,8 +215,9 @@ $main-background-color: #F5F6FA;
      border: 2px solid #eee;  /* JUST TO LOOK COOL */
      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
      transition: linear 0.2s all;
+     transform: translate3d(0px, 0px, 0px);
 
-      &:hover{
+     &:hover{
         background-color: #FFEEF0;
         border-color: #FD5160;
         border-style: solid;
@@ -212,7 +225,9 @@ $main-background-color: #F5F6FA;
         outline: none;
         transition: linear 0.2s all;
         box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
-        transform: translate3d(0px, -1px, 0px);
+        transform: translate3d(0px, -3px, 0px);
+
+       
 
         & span{
             color: #FD5160;
@@ -220,7 +235,13 @@ $main-background-color: #F5F6FA;
             opacity: 1;
         }
     }
+
+     &:active{
+            transform: translate3d(0px, 0px, 0px);
+            box-shadow: rgba(0,0,0,0) 0px 0px 0px;
+        }
 }
+
 
 .temp-active{  
         background-color: #FFEEF0;
@@ -228,10 +249,14 @@ $main-background-color: #F5F6FA;
         border-style: solid;
         border-width: 2px;
         outline: none;
-    
+        transition: linear 0.2s all;
         box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
-        transform: translate3d(0px, -1px, 0px);
-
+        transform: translate3d(0px, -2px, 0px);
+        
+        &:active{
+            transform: translate3d(0px, 0px, 0px);
+            box-shadow: rgba(0,0,0,0) 0px 0px 0px;
+        }
         & span{
             color: #FD5160;
             font-weight: 700;
@@ -243,8 +268,8 @@ $main-background-color: #F5F6FA;
         background-color: #FFFFFF;
         border: 2px solid #eee;  /* JUST TO LOOK COOL */
         box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
-        transition: linear 0.1s all;
-
+         transition: linear 0.2s all;
+        transform: translate3d(0px, 0px, 0px);
 
     
     &:hover{
@@ -263,6 +288,11 @@ $main-background-color: #F5F6FA;
             opacity: 1;
         }       
     }
+
+     &:active{
+            transform: translate3d(0px, 0px, 0px);
+            box-shadow: rgba(0,0,0,0) 0px 0px 0px;
+        }
 }
 
 .volume-active{
@@ -273,6 +303,12 @@ $main-background-color: #F5F6FA;
         outline: none;
         box-shadow: rgba(0,0,0,0.3) 0px 4px 15px;
         transform: translate3d(0px, -1px, 0px);
+         transition: linear 0.2s all;
+
+         &:active{
+            transform: translate3d(0px, 0px, 0px);
+            box-shadow: rgba(0,0,0,0) 0px 0px 0px;
+        }
 
         & span{
             color: #7224FF;
@@ -294,7 +330,9 @@ $main-background-color: #F5F6FA;
 
 .tempUnits{
     transition: linear 0.2s all;
-    option{       
+
+    option{
+              
         &:checked{
                 color:#FD5160;
                 background: #FFEEF0;

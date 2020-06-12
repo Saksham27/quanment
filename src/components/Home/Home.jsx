@@ -1,44 +1,61 @@
 import React, { useState, useEffect } from 'react'
+
+// Componenet imports
 import TopBar from '../TopBar/TopBar'
-import './Home.scss'
 import ConversionType from './../CoversionType/CoversionType'
+import ConversionForm from '../Conversionform/ConversionForm'
+
+// Css and assets import
+import './Home.scss'
 import hot from './../../assests/hot.svg'
 import hotInactive from './../../assests/hot_inactive.svg'
 import beaker from './../../assests/beaker.svg'
 import beakerInactive from './../../assests/beaker_inactive.svg'
 import scale from './../../assests/scale.svg'
 import scaleInactive from './../../assests/scale_inactive.svg'
-import { ConversionForm } from '../Conversionform/ConversionForm'
 
+// Constant arrayes for Setting conversion options
 const lengthOption = ['Inch', 'Feet', 'Yard'];
 const tempOption = ['C', 'F'];
 const volumeOption = ['Ml', 'Litre'];
 
+// Fucntional componeent * Home *
 const Home = props => {
 
+    // setting inital states -----------------------------
+
+    // state for converison units
     let [optionsVal, setOptions] = useState(lengthOption)
+
+    // state for Length conversion type - Background Image, clicked state, applied style based on state
     const [lengthBackground, setLengthBackground] = useState(scale)
     const [lengthClicked, setLengthclicked] = useState(true)
     const [lengthStyle, setLengthStyle] = useState('length-active')
+
+    // state for Temperature conversion type - Background Image, clicked state, applied style based on state
     const [tempBackground, setTempBackground] = useState(hotInactive)
     const [tempClicked, setTempclicked] = useState(false)
     const [tempStyle, setTempStyle] = useState('temp')
+
+    // state for Volume conversion type - Background Image, clicked state, applied style based on state
     const [volumeBackground, setVolumeBackground] = useState(beakerInactive)
     const [volumeClicked, setVolumeclicked] = useState(false)
     const [volumeStyle, setVolumeStyle] = useState('volume')
     let [formStyle, setFormStyle] = useState('lengthUnits')
 
-
-
-    // methods for length button
+    // Method to change background image state of Length button when mouse enters
     const hoverLengthEnter = () => {
         setLengthBackground(scale);
     }
+
+    // Method to change background image state of Length button when mouse exits
     const hoverLengthExit = () => {
         if (lengthClicked === false) {
             setLengthBackground(scaleInactive)
         }
     }
+
+    // Method to manipulates diffrent states of Length, Temperature, Volume button when clicked on Length button
     const clickLength = () => {
         setLengthBackground(scale);
         setTempBackground(hotInactive);
@@ -55,19 +72,19 @@ const Home = props => {
         setFormStyle('lengthUnits');
     };
 
-
-
-
-    // method for temp button
-
+    // Method to change background image state of Temperature button when mouse enters
     const hoverTempEnter = () => {
         setTempBackground(hot);
     }
+
+    // Method to change background image state of Temperature button when mouse exits
     const hoverTempExit = () => {
         if (tempClicked === false) {
             setTempBackground(hotInactive)
         }
     }
+
+    // Method to manipulates diffrent states of Length, Temperature, Volume button when clicked on Temperature button
     const clickTemp = () => {
         setLengthBackground(scaleInactive);
         setTempBackground(hot);
@@ -85,16 +102,19 @@ const Home = props => {
 
     }
 
-    // method for volume button
-
+    // Method to change background image state of Volume button when mouse enters
     const hoverVolumeEnter = () => {
         setVolumeBackground(beaker);
     }
+
+    // Method to change background image state of Volume button when mouse exits
     const hoverVolumeExit = () => {
         if (volumeClicked === false) {
             setVolumeBackground(beakerInactive)
         }
     }
+
+    // Method to manipulates diffrent states of Length, Temperature, Volume button when clicked on Volume button
     const clickVolume = () => {
         setLengthBackground(scaleInactive);
         setTempBackground(hotInactive);
@@ -112,6 +132,7 @@ const Home = props => {
 
     }
 
+    // Method to change state of conversion unit array based on clicked state of specific button
     let passOption = () => {
         if (lengthClicked === true) {
             setOptions(lengthOption);
@@ -123,7 +144,6 @@ const Home = props => {
             setOptions(volumeOption);
         }
     }
-
 
     return (
         <div className="home">
@@ -142,7 +162,7 @@ const Home = props => {
                         enter={hoverLengthEnter}
                         click={clickLength}
                         exit={hoverLengthExit}
-                        >
+                    >
                         Length
                     </ConversionType>
 
@@ -152,7 +172,7 @@ const Home = props => {
                         enter={hoverTempEnter}
                         click={clickTemp}
                         exit={hoverTempExit}
-                        >
+                    >
                         Temperature
                     </ConversionType>
 
@@ -162,7 +182,7 @@ const Home = props => {
                         enter={hoverVolumeEnter}
                         click={clickVolume}
                         exit={hoverVolumeExit}
-                        >
+                    >
                         Volume
                     </ConversionType>
 
@@ -175,6 +195,5 @@ const Home = props => {
         </div>
     )
 }
-
 
 export default Home
