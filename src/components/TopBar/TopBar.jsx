@@ -9,7 +9,7 @@ function TopBar(props) {
         <div className='container'>
             <div className='quantment' onClick={() => history.push('./quanment')}>Quantment</div>
             <div />
-            <div className="history" onClick={() => history.push('./quanment/History')}>History</div>
+            <div className="history" onClick={() => history.push('./History')}>History</div>
         </div>
     )
 }
