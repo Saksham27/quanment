@@ -11,8 +11,8 @@ export default class routes extends Component {
             <div>
                 <Router history={history}>
                     <Switch>
-                        <Route path='/' exact component={Home}/>
-                        <Route path='/History' exact component={History}/>
+                        <Route path='/quanment' exact component={Home}/>
+                        <Route path='/quanment/History' exact component={History}/>
                     </Switch>
                 </Router>
             </div>
