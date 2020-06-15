@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38eb77518fedab518b382b26790b87ad",
+    "revision": "9e2ac9806d70738bc6cc930086d2a682",
     "url": "/quanment/index.html"
   },
   {
-    "revision": "f4ddf0e9290340fec85c",
+    "revision": "f3ff0f8018d7bb7b8260",
     "url": "/quanment/static/css/main.a6091c2d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/quanment/static/js/2.384fcdbf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f4ddf0e9290340fec85c",
-    "url": "/quanment/static/js/main.0cd4d080.chunk.js"
+    "revision": "f3ff0f8018d7bb7b8260",
+    "url": "/quanment/static/js/main.4aaaed03.chunk.js"
   },
   {
     "revision": "7520cfe659506c0533c0",
