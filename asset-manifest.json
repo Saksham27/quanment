@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7405e5f.chunk.css",
-    "main.js": "/static/js/main.c1ee17de.chunk.js",
-    "main.js.map": "/static/js/main.c1ee17de.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bb772477.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bb772477.js.map",
-    "static/js/2.ab1d4d3c.chunk.js": "/static/js/2.ab1d4d3c.chunk.js",
-    "static/js/2.ab1d4d3c.chunk.js.map": "/static/js/2.ab1d4d3c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a4286af2a86291b10cc6e6b2816beace.js": "/precache-manifest.a4286af2a86291b10cc6e6b2816beace.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.d7405e5f.chunk.css.map": "/static/css/main.d7405e5f.chunk.css.map",
-    "static/js/2.ab1d4d3c.chunk.js.LICENSE.txt": "/static/js/2.ab1d4d3c.chunk.js.LICENSE.txt",
-    "static/media/beaker.svg": "/static/media/beaker.c824fced.svg",
-    "static/media/beaker_inactive.svg": "/static/media/beaker_inactive.741ab4aa.svg",
-    "static/media/hot.svg": "/static/media/hot.73b39610.svg",
-    "static/media/hot_inactive.svg": "/static/media/hot_inactive.68ef5287.svg",
-    "static/media/scale.svg": "/static/media/scale.55317149.svg",
-    "static/media/scale_inactive.svg": "/static/media/scale_inactive.6bae66d0.svg"
+    "main.css": "/quanment/static/css/main.a6091c2d.chunk.css",
+    "main.js": "/quanment/static/js/main.0cd4d080.chunk.js",
+    "main.js.map": "/quanment/static/js/main.0cd4d080.chunk.js.map",
+    "runtime-main.js": "/quanment/static/js/runtime-main.5f36e0d9.js",
+    "runtime-main.js.map": "/quanment/static/js/runtime-main.5f36e0d9.js.map",
+    "static/js/2.384fcdbf.chunk.js": "/quanment/static/js/2.384fcdbf.chunk.js",
+    "static/js/2.384fcdbf.chunk.js.map": "/quanment/static/js/2.384fcdbf.chunk.js.map",
+    "index.html": "/quanment/index.html",
+    "precache-manifest.fd01b055703a659b98bbeaf2ab252146.js": "/quanment/precache-manifest.fd01b055703a659b98bbeaf2ab252146.js",
+    "service-worker.js": "/quanment/service-worker.js",
+    "static/css/main.a6091c2d.chunk.css.map": "/quanment/static/css/main.a6091c2d.chunk.css.map",
+    "static/js/2.384fcdbf.chunk.js.LICENSE.txt": "/quanment/static/js/2.384fcdbf.chunk.js.LICENSE.txt",
+    "static/media/beaker.svg": "/quanment/static/media/beaker.c824fced.svg",
+    "static/media/beaker_inactive.svg": "/quanment/static/media/beaker_inactive.741ab4aa.svg",
+    "static/media/hot.svg": "/quanment/static/media/hot.73b39610.svg",
+    "static/media/hot_inactive.svg": "/quanment/static/media/hot_inactive.68ef5287.svg",
+    "static/media/scale.svg": "/quanment/static/media/scale.55317149.svg",
+    "static/media/scale_inactive.svg": "/quanment/static/media/scale_inactive.6bae66d0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb772477.js",
-    "static/js/2.ab1d4d3c.chunk.js",
-    "static/css/main.d7405e5f.chunk.css",
-    "static/js/main.c1ee17de.chunk.js"
+    "static/js/runtime-main.5f36e0d9.js",
+    "static/js/2.384fcdbf.chunk.js",
+    "static/css/main.a6091c2d.chunk.css",
+    "static/js/main.0cd4d080.chunk.js"
   ]
 }
