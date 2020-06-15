@@ -21,20 +21,16 @@ export default class History extends Component {
     
     history = () => {
         axios.getAll(config.url).then((json) => {
-            console.log(" All historyfound ", json.data.data);
             this.setState({ History: json.data.data });
-            console.log("History Array", this.state.History);
         }).catch((err) => {
             console.log(err);
-
         })
     }
 
     temparray=[];
     onCheck=(event,index)=>{
             this.temparray.push(Number(event.target.value));
-            this.setState({isChecked:-1})
-            console.log(this.temparray );       
+            this.setState({isChecked:-1})    
     }
 
    delete=(arr)=>{
@@ -43,7 +39,6 @@ export default class History extends Component {
        }
        console.log(inputData);
         axios.deleteMultiple(config.url,inputData).then((json) => {
-            console.log(json)
             if(json.data.success=== true){
                 this.history();
             }
@@ -91,15 +86,5 @@ export default class History extends Component {
         )
     }
 
-    // componentDidUpdate(prevState) {
-    //     if (prevState.isChecked!==this.state.isChecked) {
-    //         console.log('worked');
-            
-    //         this.setState({
-    //             isChecked: ''
-    //         })
-        
-    //     }
-    // }
 }
 

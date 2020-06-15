@@ -160,7 +160,7 @@ const Home = props => {
                         styleName={lengthStyle}
                         image={lengthBackground}
                         enter={hoverLengthEnter}
-                        click={clickLength}
+                        click={clickLength}         
                         exit={hoverLengthExit}
                     >
                         Length

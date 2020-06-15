@@ -332,7 +332,7 @@ $main-background-color: #F5F6FA;
     transition: linear 0.2s all;
 
     option{
-              
+        border: none;
         &:checked{
                 color:#FD5160;
                 background: #FFEEF0;

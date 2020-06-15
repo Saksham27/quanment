@@ -13,6 +13,7 @@ $field-background-color: #FFFFFF;
         // flex: 0 0 40%;
         max-width: 47.5%;
         margin-right: 2.5%;
+        position: relative;
 
         & label{
             font-family: 'Montserrat', sans-serif;
@@ -41,9 +42,32 @@ $field-background-color: #FFFFFF;
             text-transform: capitalize;
             opacity: 1;
             outline-color: #d8d6dd;
+            -webkit-appearance: none;
+             -moz-appearance: none;
+             appearance: none;
         }
 
+        & input::-webkit-outer-spin-button,
+        & input::-webkit-inner-spin-button {
+            appearance: none;
+            margin: 0;
+        }
+
+         &::before{
+                 content: '\25E2';
+                 font: 15px "Consolas", monospace;
+                color: #919090;
+                transform: rotate(45deg);
+                right: 27px;            
+                top: 92px;
+                position: absolute;
+                pointer-events: none;   
+
+        }
+
+             
         & select{
+            
             font-family: 'Montserrat', sans-serif;
             font-size: 13px;
             font-weight: 500;
@@ -55,9 +79,11 @@ $field-background-color: #FFFFFF;
             letter-spacing: 0px;
             color: #000000;
             text-transform: capitalize;
-            opacity: 1;
+            opacity: 1;     
+            outline-color: #d8d6dd;
+             appearance: none;
+
             
-           
         }
 
     }
@@ -69,7 +95,7 @@ $field-background-color: #FFFFFF;
         margin-left: 2.5%;
         text-align: left;
         max-width: 47.5%;
-
+        position: relative;
         
         & label{
             font-family: 'Montserrat', sans-serif;
@@ -98,6 +124,7 @@ $field-background-color: #FFFFFF;
             text-transform: capitalize;
             opacity: 1;
             outline-color: #d8d6dd;
+            appearance: none;
         }
 
         & select{
@@ -113,7 +140,26 @@ $field-background-color: #FFFFFF;
             color: #000000;
             text-transform: capitalize;
             opacity: 1;
-            
+            outline-color: #d8d6dd; 
+            appearance: none;
+        }
+
+        & input::-webkit-outer-spin-button,
+        & input::-webkit-inner-spin-button {
+            appearance: none;
+            margin: 0;
+        }
+
+        &::before{
+                 content: '\25E2';
+                 font: 15px "Consolas", monospace;
+                color: #919090;
+                transform: rotate(45deg);
+                right: 27px;            
+                top: 92px;
+                position: absolute;
+                pointer-events: none;   
+
         }
     }
 
@@ -129,6 +175,9 @@ $field-background-color: #FFFFFF;
             & select{
 
             }
+             &::before{           
+                top: 80px;
+            }
         }
 
         &--to{
@@ -142,6 +191,10 @@ $field-background-color: #FFFFFF;
             & select{
                 
             }
+             &::before{           
+                top: 80px;
+            }
+        
         }
     }
 }

@@ -10,39 +10,34 @@ export class ConversionForm extends Component {
     constructor(props) {
         super(props)
 
+
         this.state = {
-            options: [],
+            numberValue: 1,
+            resultValue: 0.08,
             firstSelectValue: this.props.options[0],
-            secondSelectValue: this.props.options[1],
-            numberValue: '',
-            resultValue: ''
+            secondSelectValue: this.props.options[1]
         }
+
+
     }
 
     onChangeFirst = (e) => {
-        let value = e.target.value;
-        console.log(value);
-        this.setState({ firstSelectValue: value }, () => this, this.convert())
+        this.setState({ firstSelectValue: e.target.value }, () => this.convert())
 
     }
     onChangeSecond = (e) => {
-        let value = e.target.value;
-        console.log(value);
-        this.setState({ secondSelectValue: value }, () => this.convert());
+        this.setState({ secondSelectValue: e.target.value }, () => this.convert());
 
     }
 
     onChangeInput = (e) => {
         this.setState({ numberValue: e.target.value }, () => this.convert());
-        console.log("number value:", e.target.value);
-
     }
 
 
     convert = async () => {
 
         let unitVal = `${String(this.state.firstSelectValue)}To${String(this.state.secondSelectValue)}`;
-        console.log(unitVal);
 
         let inputValue = {
             Value: this.state.numberValue,
@@ -54,9 +49,9 @@ export class ConversionForm extends Component {
             // console.log();
             if (json.data.data[0]) {
                 console.log('convertion success');
-                
+
                 this.setState({ resultValue: json.data.data[0].result });
-            }else{
+            } else {
                 this.setState({ resultValue: 0 });
             }
 
@@ -74,22 +69,39 @@ export class ConversionForm extends Component {
             this.setState({
                 firstSelectValue: this.props.options[0],
                 secondSelectValue: this.props.options[1],
-                numberValue: '',
-                resultValue: ''
             });
+
+            if (this.props.options[0] === 'Inch') {
+                this.setState({
+                    numberValue: 1,
+                    resultValue: 0.08
+                })
+            }
+            if (this.props.options[0] === 'C') {
+                this.setState({
+                    numberValue: 0,
+                    resultValue: 32
+                })
+            }
+            if (this.props.options[0] === 'Ml') {
+                this.setState({
+                    numberValue: 1,
+                    resultValue: 0.001
+                })
+            }
         }
     }
     render() {
 
         const value = this.props.options;
-        
+
 
         return (
             <div>
                 <form className='conversionForm-container'>
                     <div className='conversionForm-container--from'>
                         <label htmlFor="from">From</label>
-                        <input type="number"  id="from_input" name="form_input" onChange={(event) => this.onChangeInput(event)} value={this.state.numberValue} required></input>
+                        <input type="number" id="from_input" name="form_input" onChange={(event) => this.onChangeInput(event)} value={this.state.numberValue} required></input>
                         <select id="from" name="from" onChange={(event) => this.onChangeFirst(event)} className={this.props.style} value={this.state.firstSelectValue}>
                             {
                                 value.map((option, index) => {
